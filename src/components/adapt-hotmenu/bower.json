@@ -1,0 +1,20 @@
+{
+    "name": "adapt-hotmenu",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/cgkineo/adapt-hotmenu"
+    },
+    "framework": ">=3.2",
+    "version": "3.0.0",
+    "homepage": "https://github.com/cgkineo/adapt-hotmenu",
+    "issues": "https://github.com/cgkineo/adapt-hotmenju/issues/",
+    "displayName": "Hotmenu",
+    "component": "hotmenu",
+    "description": "A component that displays selectable images in a grid format.",
+    "main": "/js/adapt-hotmenu.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

@@ -1,0 +1,223 @@
+//Module 2 LESS
+.page {	
+	.article {
+		.block {
+			.block-inner {
+				@media all and (min-width: (@device-width-small + 1)) {
+					padding-bottom: 53px;
+					padding-top: 53px;
+				}
+			}
+		}
+		.block.text-n-graphic {
+			.block-inner {
+				@media all and (min-width: (@device-width-medium + 2)) {
+					padding-bottom: 69px;
+				}
+
+				.component-container {
+					@media all and (min-width: (@device-width-medium + 2)) {
+						.graphic-component {
+							.component-inner {
+								.component-header {
+									.component-header-inner {
+										.component-body {
+											margin: 0;
+										}
+									}
+								}
+								.component-widget {
+									float: right;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.a-6-1-4 {
+			background: none;
+
+			.b-6-1-4 {
+				.block-inner {
+					.component-container {
+						.hotgrid-component {
+							.component-inner {
+								.component-widget {
+									.hotgrid-grid {
+										.hotgrid-grid-inner {
+											.hotgrid-grid-item {
+												.hotgrid-item-title {
+													color: #3c3c3c;
+													margin-bottom: 5%;
+													margin-top: 5%;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.a-6-1-6-1 {
+			padding-bottom:53px;
+			.block.b-6-1-6a{
+				.block-inner {
+					padding-bottom: 20px;
+					padding-top: 53px;
+				}
+			} 
+			.block.b-6-1-6b, .block.b-6-1-6c, .block.b-6-1-6d , .block.b-6-1-6e, .block.b-6-1-6f, .block.b-6-1-6g, .block.b-6-1-6h, .block.b-6-1-6i, .block.b-6-1-6j, .block.b-6-1-6k, .block.b-6-1-6l, .block.b-6-1-6m, .block.b-6-1-6n, .block.b-6-1-6o {
+				.block-inner {
+					padding-bottom: 10px;
+					padding-top: 10px;
+					.component-container {
+						.component-inner {
+							padding: 0px 20px;
+							.buttons{
+								margin:0px;
+								margin-top: 10px;
+							}
+						}
+					}
+					.buttons button{
+						float: right;
+					}
+				}
+			}
+		}
+		&.a-6-1-12, &.a-6-1-17 {
+			.block {
+				.block-inner {
+					.component-container {
+						.animation-hotspot-component {
+							.component-inner {
+								.component-widget {
+									.animation-hotspot-widget-container {
+										left: 50%;
+										transform: translateX(-50%);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+		&.a-6-1-5 {
+			background: none;
+			.b-6-1-4 {
+				.block-inner {
+					.component-container {
+						@media all and (min-width: (@device-width-medium + 2)) {
+							.graphic-component {
+								.component-inner {
+									.component-header {
+										.component-header-inner {
+											.component-body {
+												margin: 0;
+											}
+										}
+									}
+									.component-widget {
+										float: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.a-6-1-11 {
+			background: none;
+		}	
+		&.a-6-1-6-r, &.a-6-1-7, &.a-6-1-10, &.a-6-1-12, &.a-6-1-19 {
+			border-bottom: 2px solid @white;
+		}	
+		&.a-6-1-6-r, &.a-6-1-7, &.a-6-1-10, &.a-6-1-12, &.a-6-1-14, &.a-6-1-19 {
+			background:#2151A6;
+			.block {
+				.block-inner {
+					.component-container {
+						.component {
+							.component-inner {
+								.component-header {
+									.component-header-inner {
+										.component-title{
+											color:#ffffff;
+										}
+										.component-body {
+											.component-body-inner {
+												padding-bottom: 0;
+												color:#ffffff;
+											}
+										}
+										.component-instruction{
+											color:#ffffff;
+										}
+									}
+								}
+							}
+							.accordion-item-title {
+								border: #ffffff solid 1px;
+							}
+							.accordion-item-title:hover {
+								border: #ffffff solid 1px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.a-6-1-19 {
+			.b-6-1-19 {
+				.block-inner {
+					.component-container {
+						.animation-hotspot-component {
+							.component-inner {
+								.component-widget {
+									.animation-hotspot-widget-container {
+										left: 50%;
+										transform: translateX(-50%);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.a-6-1-20 {
+			.b-6-1-20a {
+				.block-inner {
+					padding-bottom: 0;
+				}
+			}
+			.b-6-1-20b {
+				.block-inner {
+					padding-top: 0;
+				}
+			}
+		}
+
+		&.a-6-1-21 {
+			.b-6-1-21a {
+				.block-inner {
+					padding-bottom: 0;
+				}
+			}
+			.b-6-1-21b {
+				.block-inner {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+}

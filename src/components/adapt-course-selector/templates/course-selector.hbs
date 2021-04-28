@@ -1,0 +1,13 @@
+<div class="course-selector-inner component-inner" role="region" aria-label="{{_globals._components._text.ariaRegion}}">
+    {{> component this}}
+	
+	<div class="buttons">
+		<div class="buttons-inner">
+		    <div class="buttons-cluster clearfix">
+		    	{{#each _buttons}}
+		        	<button class="buttons-action {{_classes}}" aria-label="{{text}}">{{{text}}}</button>
+		        {{/each}}
+		    </div>
+		</div>
+	</div>
+</div>

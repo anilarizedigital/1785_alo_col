@@ -1,0 +1,122 @@
+// Navigation styling
+// ==================
+@navigation-height: (@navigation-padding * 2) + @icon-size - 4;
+@navigation-icon-top-padding: @navigation-padding - 2; 
+
+.navigation {
+    overflow: hidden;
+    background-color: @blue;
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    height: auto;
+    min-height: 60px;
+    .navigation-inner {
+        margin: 0 auto;
+        //max-width: 1200px;
+        .navigation-menu-button {
+            float: left;
+        }
+        img {
+            display: inline-block;
+            padding: 15px 5px 0px 15px;
+
+            &.gs-logo {
+                float: left;
+                max-width: 200px;
+                padding-top: 19px;
+            }
+            &.ncsc-logo {
+                float: left;
+                @media all and (max-width: 629px) {
+                    display: none;
+                }
+            }
+            &.csf-logo {
+                float: right;
+                padding-top: 5px;
+                padding-right: 15px;
+                @media all and (max-width: @device-width-small) {
+        
+                    display: none;
+                }
+            }
+            max-width: 38%;
+        }
+        .icon {
+            padding: @navigation-icon-top-padding @navigation-padding;
+            color:@white;
+            .transition-color;
+            //padding: 13px 20px;
+            //font-size: 34px;
+            padding: 37px 30px;
+            font-size: 42px;
+
+            @media all and (max-width: (1024px)) {
+                padding: 16px 10px;
+            }
+
+            .no-touch &:hover {
+                color: @navigation-icon-color-hover;
+            }
+        }
+
+        .skip-nav-link {
+            background-color: @button-color;
+            border-radius: 0;
+            color: @button-text-color;
+            display: none;
+            left: 0;
+            margin-top: 0;
+            padding: 10px 20px;
+            position: absolute;
+            top: -46px;
+            -webkit-transition: top .2s ease-out;
+            transition: top .2s ease-out;
+            width: auto;
+            z-index: 100;
+            .accessibility & {
+                display: inline-block;
+            }
+            &:focus {
+                top: 0;
+            }
+        }
+    }
+}
+
+//Navigation back/menu buttons visibility
+.location-page {
+    .navigation-back-button {
+        display: block;
+    }
+    .navigation-menu-button {
+        display: block;
+    }
+}
+.location-page {
+    &.location-id-co-05 {
+        .navigation-back-button {
+            display: none;
+        }
+        .navigation-menu-button {
+            display: none;
+        }
+    }
+    &.location-id-co-10 {
+        .navigation-back-button {
+            display: none;
+        }
+        .navigation-menu-button {
+            display: none;
+        }
+    }
+}
+.location-menu{
+    &.location-id-course {
+        .navigation-back-button {
+            display: block;
+        }
+        .navigation-menu-button {
+            display: none;
+        }
+    }
+}

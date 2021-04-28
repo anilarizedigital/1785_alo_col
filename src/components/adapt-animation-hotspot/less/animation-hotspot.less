@@ -1,0 +1,64 @@
+.animation-hotspot-component {
+    .animation-hotspot-title {
+        margin: 0px;
+    }
+    .animation-hotspot-widget {
+        margin-left: 0px;
+        .animation-hotspot-widget-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+            }
+            .animation-hotspot-item-holder {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                img {
+                    vertical-align: top;
+                }
+                .animation-hotspot-item {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    img {
+                        background: none;
+                        opacity: 0;
+                        display: block;
+                        clear: both;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+                .animation-hotspot-highlight {
+                    z-index: 1;
+                    img {
+                        display: none;
+                        position: absolute;
+                    }
+                }
+                .animation-hotspot-hotspot {
+                    z-index: 2;
+                    .hotspot {
+                        position: absolute;
+                        border-radius: 0px;
+                        width: 20%;
+                        background: rgba(255,0,0,0.0);
+                        z-index: 1;
+                        cursor: pointer;
+                        text-align: center;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

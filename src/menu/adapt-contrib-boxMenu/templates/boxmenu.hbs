@@ -1,0 +1,36 @@
+{{import_globals}}
+<div class="menu-container">
+	<div class='menu-container-inner box-menu-inner clearfix'>
+		<div class="menu-header">
+			<div class="menu-header-inner">
+				{{#if displayTitle}}
+				<div class="menu-title">
+					{{#unless _disableAccessibleState}}
+						<div class="js-heading"></div>
+					{{/unless}}
+					<div class="menu-title-inner h1">
+						{{{compile displayTitle}}}
+					</div>
+				</div>
+				{{/if}}
+				{{#if body}}
+				<div class="menu-body">
+					<div class="menu-body-inner">
+						{{{compile body}}}
+					</div>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class="menu-body2">
+			<div class="menu-body-inner2">
+				{{{compile bodyText2}}}
+			</div>
+		</div>
+		<div class="js-children" role="list">
+
+		</div>	
+	</div>
+<div class="menu-footer">
+</div>
+</div>

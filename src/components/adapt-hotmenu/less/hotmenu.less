@@ -1,0 +1,292 @@
+.hotmenu-component {
+
+    .hotmenu-widget {
+        // Font size set to 0 so there's no gap between items
+        font-size: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .hotmenu-menu-item {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 50%;
+        color: #3c3c3c;
+        margin-bottom: 15px;
+        .no-touch &:hover {
+            color: #3c3c3c;
+        }
+        @media all and (max-width: (@device-width-small)) {
+            width: 100%;
+        }
+    }
+
+    .hotmenu-item-image {
+        display: block;
+        // margin: 2.5%;
+        // width: 95%;
+
+        img {
+            display: block;
+            transition: all 0.25s;
+            margin: auto;
+        }
+
+        &.hotmenu-item-states-image {
+            .item-states-image.default;
+
+            &.visited {
+                .item-states-image.visited;
+                display: block;
+            }
+
+            .no-touch &:hover {
+                .item-states-image.hover;
+            }
+        }
+
+        @media all and (max-width:(@device-width-medium - 1)) {
+            margin: 5px;
+        }
+    }
+    
+    .hotmenu-item-title {
+        font-weight: 500;
+        font-size: 21px;
+        margin-top:5px;
+    }
+
+    //removes tap highlighting on webkit-based browsers found in some mobile devices
+    button.base.hotmenu-item-image {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+}
+
+// hotmenu item states - images
+// ==============================
+.item-states-image { 
+    img {
+        display: none;
+    }
+    .default {
+        img.hotmenu-item-image-hover {
+            display: none;
+        }
+
+        img.hotmenu-item-image-visited {
+            display: block;
+        }
+    }
+
+    .hover {
+        > img {
+            display: none;
+        }
+
+        img.hotmenu-item-image-hover {
+            display: block;
+        }
+
+        img.hotmenu-item-image-visited {
+            display: none;
+        }
+    }
+
+    .visited {
+        > img {
+            display: none;
+        }
+
+        img.hotmenu-item-image-hover {
+            display: none !important;
+        }
+
+        img.hotmenu-item-image-visited {
+            display: block !important;
+        }
+    }
+}
+
+// hotmenu item states - css
+// ==============================
+.hotmenu-component {
+    .hotmenu-item-states-css {
+        border: 3px solid transparent;
+        /* uncomment if circular items */
+        // border-radius: 50%;  
+
+        // .no-touch &:hover {
+        //     border: 3px solid @item-color;
+        // }
+        img {
+            //display: none;
+        }
+
+        &.visited {
+            display: block;
+            position: relative;
+            opacity: 0.5;
+
+
+            &:after {
+                content: " ";
+                display: block;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                //background-color: fade(@item-color-disabled, 50%);
+                /* uncomment if circular items */
+                //border-radius: 50%; 
+            }
+        }
+    }
+}
+
+// hotmenu notify content layout
+// ==============================
+.notify.hotmenu {
+
+    .notify-popup {
+        pointer-events: none;
+        background-color: transparent;
+        color: @font-color;
+
+        .notify-popup-content {
+            width: auto;
+            pointer-events: auto;
+        }
+    }
+
+    .notify-popup-content-inner {
+        .hotmenu-popup {
+            width: auto;
+            height: auto;
+            margin: 40px;
+            background-color: @background-color;
+            border: @item-border;
+            z-index: 5;
+            position: relative;
+            padding-top: (@item-padding-top + @item-padding-bottom) + @icon-size;
+        }
+
+        .hotmenu-popup-toolbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: @item-color;
+            height: (@item-padding-top + @item-padding-bottom) + @icon-size;
+        }
+
+        .hotmenu-popup-nav {
+            background-color: @item-color;
+        }
+
+        .hotmenu-popup-done {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+            .dir-rtl & {
+                right: inherit;
+                left: 0;
+            }
+            .no-touch &:hover {
+                .hotmenu-popup-close {
+                    color: @button-text-color-hover;
+                }
+            }
+        }
+
+        .hotmenu-popup-arrow-l,
+        .hotmenu-popup-arrow-r,
+        .hotmenu-popup-close {
+            padding: @item-padding;
+            color: @button-text-color;
+        }
+
+        .hotmenu-popup-count {
+            padding: @item-padding;
+            vertical-align: baseline;
+            color: @item-text-color;
+            float: left;
+            .dir-rtl & {
+                float: right;
+            }
+            span {
+                display: inline-block;
+            }
+        }
+
+        .hotmenu-popup-controls {
+            float: left;
+            text-decoration: none;
+            .dir-rtl & {
+                float: right;
+            }
+            .no-touch &:hover {
+                .hotmenu-popup-arrow-l,
+                .hotmenu-popup-arrow-r {
+                    color: @button-text-color-hover;
+                }
+            }
+            &.disabled {
+                visibility: hidden;
+            }
+        }
+
+        .hotmenu-popup-inner {
+            padding: @item-padding;
+        }
+
+        .hotmenu-item-graphic {
+            padding-left: @item-padding-left;
+            width: 50%;
+            box-sizing: border-box;
+            float: right;
+            .dir-rtl & {
+                float: left;
+            }
+            text-align: center;
+        }
+
+        .hotmenu-item-graphic-inner{
+            img {
+                display: block;
+            }
+            .dir-rtl & {
+                padding-left: inherit;
+                padding-right: @item-padding-left;
+            }
+        }
+
+        .hotmenu-item-content {
+            width: 50%;
+            float: left;
+            .dir-rtl & {
+                float: right;
+            }
+        }
+
+        .graphic-attribution {
+            font-size: 0.75em;
+            line-height: 1em;
+            padding-top: 0.5em;
+        }
+    }
+}
+
+.hotmenu-item:not(.active) {
+    display: none;
+}
+.hotmenu-content-title {
+    font-family: 'Raleway Webfont';
+    font-size: 21px;
+    .hotmenu-content-body {
+        font-family: 'Arial';
+        font-size: 16px;
+    }
+}

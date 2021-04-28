@@ -1,0 +1,94 @@
+.course-selector-component {
+    float: left;
+    width: 100%;
+
+    .course-selector-inner {
+        float: left;
+        padding-top: 0 !important;
+        width: ~"calc(100% - 40px)";
+
+        .course-selector-header {
+            float: left;
+        }
+            
+        .buttons {
+            float: left;
+            margin-top: 0;
+            width: 100%;
+
+            .buttons-inner {
+                float: left;
+                width: ~"calc(100% - 24px)";
+
+                @media all and (max-width: (@device-width-medium)) {
+                    width: 100%;
+                }
+                
+                .buttons-cluster {
+                    float: left;
+                    left: 50%;
+                    position: relative;
+                    transform: translateX(-50%);
+
+                    @media all and (max-width: (@device-width-medium)) {
+                        width: 325px;
+                    }
+
+                    button {
+                        color: @blue;
+                        float: left;
+                        font-family: ProximaNova-Bold;
+                        font-size: 21px;
+                        height: 325px;
+                        padding: 223px 0 0 10px;
+                        width: 325px;
+
+                        &.buttons-action {
+                            margin-right: 0;
+                        }
+
+                        &.pre-course {
+                            background: url('course/en/images/co-05/c-10/pre-course-normal.svg');
+                            margin-right: 80px;
+
+                            @media all and (max-width: (@device-width-medium)) {
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
+
+                            &:hover {
+                                background: url('course/en/images/co-05/c-10/pre-course-hover.svg');
+                                color: #F58403;
+                            }
+                        }
+
+                        &.pillar-learning {
+                            background: url('course/en/images/co-05/c-10/pillar-learning-normal.svg');
+
+                            &:hover {
+                                background: url('course/en/images/co-05/c-10/pillar-learning-hover.svg');
+                                color: #F58403;
+                            }
+                        }
+                        
+                        @media all and (max-width: (@device-width-small)) {
+                            
+                        }
+                    }
+                    //custom added
+                    .button:after,
+                    button:after {
+                        display:none;
+                        font-family: vanilla;
+                        font-size: 20px;
+                        font-weight: bolder;
+                        content: "\e655";
+                        position: absolute;
+                        padding: 0 20px 0px 4px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

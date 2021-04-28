@@ -1,0 +1,26 @@
+{
+  "name": "adapt-checklist",
+  "version": "1.0.0",
+  "framework": ">=4",
+  "homepage": "",
+  "issues": "",
+  "displayName": "Checklist",
+  "component": "checklist",
+  "description": "A simple checklist component",
+  "main": "/js/adapt-checklist.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": ""
+  },
+  "_source": "",
+  "_target": "1.0.0",
+  "_originalSource": "adapt-checklist",
+  "_direct": true
+}

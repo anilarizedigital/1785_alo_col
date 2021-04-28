@@ -1,0 +1,20 @@
+{
+    "name": "adapt-submenu",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "framework": ">=3.2",
+    "version": "0.1.2",
+    "homepage": "",
+    "issues": "",
+    "displayName": "Submenu",
+    "component": "submenu",
+    "description": "A component which will act as a menu. It can be used anywhere in the course and can be used to jump to other pages.",
+    "main": "/js/adapt-submenu.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
+}

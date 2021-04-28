@@ -1,0 +1,35 @@
+<div class="audioclip2-inner component-inner">
+    {{> component this}}
+
+    <div class="audioclip2-widget component-widget">
+        <div class="audioclip2-item">
+            <div class="audioclip2-lhs">
+                <div class="audioclip2-lhs-inner">
+                    <div class="row1">
+                        <div>
+                            <div class="audioclip2-graphic">
+                                <img src="{{_graphic.src}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}} />
+                            </div>
+                            <div class="row2-image play-pause-audio {{_id}}" aria-hidden="true">
+                                <img class="play" src="{{_item._buttonGraphic.play.src}}"/>
+                                <img class="pause hidden" src="{{_item._buttonGraphic.pause.src}}"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="player">
+                        <audio class="clip-audio {{_id}}" controls preload="metadata">
+                            <source src="{{_item.audio}}" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            {{#if _item._transcript._isRequired}}
+            <button class="buttons-action" aria-label="{{_item._transcript.buttonLabel}}">{{_item._transcript.buttonLabel}}</button>
+            {{/if}}
+        </div>
+
+
+    </div>
+</div>
+</div>

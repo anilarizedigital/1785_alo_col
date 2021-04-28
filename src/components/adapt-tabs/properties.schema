@@ -1,0 +1,118 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "A tabbed content container. Content can be text, graphic or both.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "full-width",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_tabLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["left", "top"],
+      "default": "left",
+      "title": "Tab button position",
+      "inputType": {"type": "Select", "options":["left", "top"]},
+      "validators": ["required"],
+      "help": "Select whether the tab buttons should be shown on the left or or the top of the content panel"
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "tabTitle": {
+            "type": "string",
+            "required": true,
+            "inputType": "Text",
+            "title": "Tab Item Title",
+            "default": "",
+            "validators": ["required"],
+            "help": "This is the tab item title",
+            "translatable": true
+          },
+          "title": {
+            "type": "string",
+            "required": false,
+            "inputType": "Text",
+            "title": "Item Title",
+            "default": "",
+            "validators": ["required"],
+            "help": "This is the item title",
+            "translatable": true
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "inputType": "TextArea",
+            "title": "Item Body",
+            "default": "",
+            "validators": [],
+            "help": "Body text for the tab content panel (optional).",
+            "translatable": true
+          },
+          "_classes": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Classes",
+            "inputType": "Text",
+            "validators": [],
+            "help": "Classes that are applied to the Tabs Item"
+          },
+          "_graphic": {
+            "type": "object",
+            "required": false,
+            "title": "Graphic",
+            "properties": {
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "The alternative text for this image",
+                "translatable": true
+              },
+              "src": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Asset:image",
+                "validators": [],
+                "help": "Image for the tab content panel (optional)."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+/* .stacklist-inner {
+	overflow: auto;
+} */
+.stacklist-items {
+	float: left;
+	position: relative;
+	margin-bottom: 47px;
+	width: 100%;
+
+	@media all and (max-width: (@device-width-large - 1)) {
+		margin-bottom: 80px;
+	}
+	@media all and (max-width: (@device-width-small - 1)) {
+		margin-bottom: 65px;
+	}
+}
+
+.stacklist-item {
+	float: left;
+	position: relative;
+	//padding: 20px;
+	margin-bottom: 3%;
+	background-color: @white;
+	color: #434343;
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.20);
+	box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.20);
+
+	&.show {
+		float: left;
+		//position: static !important;
+		margin-bottom: 3%;
+	}
+
+	&:last-child {
+		// margin-bottom: 0;
+		// @media all and (max-width: (@device-width-medium - 1)) {
+    //         margin-bottom: 5%;
+    //     }
+	}
+
+	.stacklist-item-inner {
+		float: left;
+		padding: 20px;
+		ul {
+			// text-align: center;
+			//list-style-position: inside;
+		}
+
+			
+		.stacklist-title-text {
+			color: @blue;
+			font-family: 'Raleway Webfont';
+			font-size: 21px;
+		}
+		.stacklist-item-text {
+			a {
+				word-break: break-word;
+			}
+			a:link {
+				color: #00a9eb;
+				text-decoration: underline;
+			}
+			a:visited {
+				color: #bf6d0f;
+			}
+
+			@media all and (max-width: (767px)) {
+				width: 100% !important;
+			}
+		}
+		.stacklist-item-image {
+			height: auto;
+			width: 370px;
+			float: right;
+			@media all and (max-width: (860px)) {
+				width: 320px;
+			}
+			@media all and (max-width: (767px)) {
+				//display: none;
+				float: none;
+				margin: auto;
+				width: 90% !important;
+			}
+		}
+	}
+
+	//border: 2px solid @border-grey;
+	.blue-bg & {
+		border: none;
+	}
+}
+
+.stacklist-button {
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 53px;
+	width: 100%;
+	text-align: center;
+	.button, button {
+		padding: 9px;
+	}
+	.stacklist-next-circle {
+		//float: left;
+		width: 76px;
+    height: 60px;
+    background: url(./course/en/images/common/stacklist-button-normal.png) no-repeat;
+    background-size: contain;
+		
+		&:hover{
+			background: url(./course/en/images/common/stacklist-button-hover.png) no-repeat;
+		}
+	}
+}
+

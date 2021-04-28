@@ -1,0 +1,203 @@
+[
+    {
+        "_id": "co-10",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "co-15",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "title": "1. Collaborative approaches and reactions",
+        "displayTitle": "1. Collaborative approaches and reactions",
+        "body": "This module introduces the different approaches to collaborative working and how different individuals can react to a collaborative environment.",
+        "pageBody": "",
+        "instruction": "",
+        "_showCommulativeProgress": true,
+        "_commulativeProgressIds": "co-15",
+        "_graphic": {
+            "src": "course/en/images/menu/menu-2.jpg",
+            "alt": "Image of hands on keyboard"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "co-20",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "title": "2. Mindset and behaviours",
+        "displayTitle": "2. Mindset and behaviours",
+        "body": "This module looks at the mindset and behaviours that can improve outcomes.",
+        "pageBody": "",
+        "instruction": "",
+        "_showCommulativeProgress": true,
+        "_commulativeProgressIds": "co-20",
+        "_graphic": {
+            "src": "course/en/images/menu/menu-3.jpg",
+            "alt": "Image of hands on keyboard"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "co-25",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "title": "<b>3. Tools and techniques</b>",
+        "displayTitle": "<b>3. Tools and techniques</b>",
+        "body": "This module introduces the tools and techniques that can drive collaboration.<br><br>",
+        "pageBody": "",
+        "instruction": "",
+        "_showCommulativeProgress": true,
+        "_commulativeProgressIds": "co-25",
+        "_graphic": {
+            "src": "course/en/images/menu/menu-4.jpg",
+            "alt": "Image of hands on keyboard"
+        },
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    },
+    {
+        "_id": "co-31",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },    
+    {
+        "_id": "co-32",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-33",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-34",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-35",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-36",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-37",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-38",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    },
+    {
+        "_id": "co-39",
+        "_parentId": "course",
+        "_type": "page",
+        "_classes": "",
+        "_htmlClassName": "",
+        "pageBody": "",
+        "_isHidden": true,
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        },
+        "_isOptional" : true,
+        "_showPageCompletion" : false
+    }
+]

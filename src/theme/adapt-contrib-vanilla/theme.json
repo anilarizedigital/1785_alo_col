@@ -1,0 +1,7 @@
+{
+    "screenSize": {
+        "small": 520,
+        "medium": 1023,
+        "large": 1200
+    }
+}

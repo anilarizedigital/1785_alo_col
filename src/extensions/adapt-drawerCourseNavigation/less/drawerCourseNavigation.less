@@ -1,0 +1,49 @@
+.drawerCourseNavigation {
+    .drawerCourseNavigation-item {
+        &.selected {
+            color:@drawer-item-text-hover-color;
+            background-color: @drawer-item-hover-color;
+        }
+        .no-touch &:hover {
+            color:@drawer-item-text-hover-color;
+            background-color: @drawer-item-hover-color;
+        }
+        .drawerCourseNavigation-item-menu {
+            button:hover {
+                //background: #337cbb !important;
+                background: @white;
+                color: @blue;
+                
+            }
+            &.selected {
+                button {
+                   // background: #337cbb;
+                   background: @white;
+                   color: @blue;
+                    
+                }
+            }
+            &.active {
+                button {
+                    background: #337cbb;
+                }
+            }
+        }
+        .drawerCourseNavigation-item-submenu {
+            //height: 0;
+            //overflow: hidden;
+            display: block;
+            background: #1a6cb3;
+            button:hover {
+                background: @white !important;
+                color: @blue !important;
+            }
+            &.selected {
+                button {
+                    background: @white;
+                    color: @blue;
+                }
+            }
+        }
+    }      
+}

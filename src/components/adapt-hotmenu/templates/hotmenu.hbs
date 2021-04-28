@@ -1,0 +1,40 @@
+<div class="component-inner hotmenu-inner">
+    {{> component this}}
+    <div class="component-widget hotmenu-widget">
+        <div role="list" class="hotmenu-menu">
+            <div class="hotmenu-menu-inner clearfix">
+                {{#each _items}}
+                <button class="base hotmenu-menu-item" data-index={{@index}} role="listitem" aria-label="{{#if _graphic.title}}{{_graphic.title}}{{else}}{{../_globals._accessibility._ariaLabels.item}} {{numbers @index}}{{/if}}.{{#if _graphic.alt}} {{_graphic.alt}}.{{/if}}{{#if _isVisited}} {{../_globals._accessibility._ariaLabels.visited}}.{{/if}}" data-index={{@index}}>
+                    <div class="hotmenu-item-image hotmenu-item-states-{{#if _graphic.hasImageStates}}image{{else}}css{{/if}} {{#if _isVisited}}visited{{/if}} {{#if ../_hasRoundedImages}}border-radius{{/if}}">
+                        <img src="{{_graphic.src}}"/>
+                        {{#if _graphic.hasImageStates}}
+                        <img src="{{_graphic.srcHover}}" class="hotmenu-item-image-hover"/>
+                        <img src="{{_graphic.srcVisited}}" class="hotmenu-item-image-visited"/>
+                        {{/if}}
+                         {{!-- {{#if _isVisited}}
+                             <img src="{{_graphic.srcHover}}" class="hotmenu-item-image-hover"/>
+                            <img src="{{_graphic.srcVisited}}" class="hotmenu-item-image-visited"/>
+                        {{else}}
+                            <img src="{{_graphic.src}}"/>
+                         {{/if}} --}}
+                    </div>
+                    {{#if _graphic.title}}
+                    <div class="hotmenu-item-title">
+                        <div class="hotmenu-item-title-inner">
+                            {{{_graphic.title}}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if _graphic.body}}
+                    <div class="hotmenu-item-body">
+                        <div class="hotmenu-item-body-inner">
+                            {{{_graphic.body}}}
+                        </div>
+                    </div>
+                    {{/if}}
+                </button>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

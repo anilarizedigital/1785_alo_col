@@ -1,0 +1,72 @@
+// Drawer styling
+// ==============
+
+.drawer {
+    background-color: @drawer-color;
+    color: @drawer-item-text-color;
+
+    .drawer-toolbar {
+        position: absolute;
+        width:100%;
+        top:0;
+        border-bottom: 1px solid darken(@blue, 5%);
+    }
+
+    .drawer-toolbar .icon {
+        color: @drawer-icon-color;
+        padding: @navigation-padding;
+        .transition-color;
+
+        .no-touch &:hover {
+            color: @drawer-icon-color-hover;
+        }
+    }
+    
+    .drawer-holder {
+        padding-top: ((@navigation-padding * 2) + @icon-size + 1);
+    }
+
+    .drawer-inner {
+        border-right: 5px solid darken(@blue, 5%);
+
+        .dir-rtl & {
+            border-right: inherit;
+            border-left: 5px solid darken(@blue, 5%);
+        }
+    }
+
+    .drawer-item {
+        .drawer-item-title {
+            //.sub-title;
+        }
+        
+        .drawer-item-description {
+        	font-size: @body-text-font-size;
+        	line-height: @body-text-line-height;
+        }
+        
+        .drawer-item-open {
+            border-bottom: 1px solid darken(@blue, 5%);
+            color: @drawer-item-text-color;
+            text-decoration: none;
+            width: 100%;
+            
+            .no-touch &:hover {
+                //background-color: @drawer-item-color-hover;
+                //color: @drawer-item-text-color-hover;
+                background-color: @white;
+                color: @blue;
+            }
+        }
+    }
+
+    .drawer-item-open {
+        padding: @drawer-item-padding-top @drawer-item-padding-right @drawer-item-padding-bottom @drawer-item-padding-left;
+        .transition-background-color;
+
+        //stops rollover of drawar items on touch devices    
+        .no-touch &:hover {
+             background-color: @drawer-color;
+       }
+    }
+}

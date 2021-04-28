@@ -1,0 +1,54 @@
+<div class="audioclip-inner component-inner">
+    {{> component this}}
+
+    <div class="audioclip-widget component-widget">
+        <div class="audioclip-item">
+            <div class="audioclip-lhs">
+                <div class="audioclip-lhs-inner">
+                    <div class="row1">
+                        {{#if _item._headGraphic.src}}
+                        <div class="row1-image">
+                            <img src="{{_item._headGraphic.src}}" aria-label="{{_item._headGraphic.alt}}" />
+                        </div>
+                        {{/if}}
+                        <div class="row1-text">
+                            {{{_item.dialogue}}}
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="row2-text">
+                            {{{_item.question}}}
+                        </div>
+                        {{!-- <div class="row2-image play-pause-audio">
+                            <img class="play" src="{{_item._buttonGraphic.play.src}}" aria-label="{{_item._buttonGraphic.play.alt}}" />
+                            <img class="pause" src="{{_item._buttonGraphic.pause.src}}" aria-label="{{_item._buttonGraphic.pause.alt}}" />
+                        </div> --}}
+                        <div class="row2-player">
+                            <audio class="clip-audio {{_id}}" controls preload="metadata">
+                                <source src="{{_item.audio}}" type="audio/mp3">
+                            </audio>
+
+                            {{!-- <div class="audioplayer">
+                                <button class="play-pause-audio play"></button>
+                                <div class="timeline">
+                                    <div class="playhead"></div>
+                                </div>
+                            </div> --}}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="audioclip-rhs">
+                <div class="audioclip-rhs-inner">
+                    <div class="quotation-text">
+                        {{{_item.quotation}}}
+                    </div>
+                </div>
+            </div>
+            {{#if _item._transcript._isRequired}}
+            <button class="buttons-action">{{_item._transcript.buttonLabel}}</button>
+            {{/if}}
+        </div>
+    </div>
+</div>

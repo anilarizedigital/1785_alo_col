@@ -1,0 +1,27 @@
+{
+    "name": "adapt-animation-hotspot",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/kunjsharma/adapt-animation-hotspot.git"
+    },
+    "version": "2.1.1",
+    "framework": "^4.0.0",
+    "homepage": "https://github.com/kunjsharma/adapt-animation-hotspot",
+    "authors": [
+        "Kunj <kunjsharma@hotmail.com>"
+    ],
+    "description": "A component having hotspots over images that enables learner to click and display a detailed popup.",
+    "main": "/js/adapt-animation-hotspot.js",
+    "keywords": [
+        "adapt",
+        "adapt plugin",
+        "adapt-plugin",
+        "adapt component",
+        "adapt-component",
+        "adapt-animation-hotspot",
+        "adapt animation hotspot",
+        "adapt animation",
+        "adapt hotspot"
+    ],
+    "license": "GPLv3"
+}

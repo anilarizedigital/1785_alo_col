@@ -1,0 +1,164 @@
+{
+    "_id": "course",
+    "_type": "course",
+    "_htmlClassName": "",
+    "title": "Collaborative Working",
+    "displayTitle": "Collaborative Working",
+    "description": "Collaborative Working",
+    "body": "Select a <b>Menu item</b> to access the learning",
+    "bodyText2": "We suggest you complete module one first for the optimum experience, however, the course has been designed to support flexible learning so you can dip in and out as required. The content will also be available to you after completion so that you can use it as a future resource when needed.<br/><br/><b>Select a Menu item to access the learning.</b>",
+    "_buttons": {
+        "_submit": {
+            "buttonText": "Submit",
+            "ariaLabel": "Submit"
+        },
+        "_reset": {
+            "buttonText": "Reset",
+            "ariaLabel": "Reset"
+        },
+        "_showCorrectAnswer": {
+            "buttonText": "Correct answer",
+            "ariaLabel": "Show correct answer"
+        },
+        "_hideCorrectAnswer": {
+            "buttonText": "My answer",
+            "ariaLabel": "Show my answer"
+        },
+        "_showFeedback": {
+            "buttonText": "Show feedback",
+            "ariaLabel": "Show feedback"
+        },
+        "remainingAttemptsText": "attempts remaining",
+        "remainingAttemptText": "final attempt",
+        "disabledAriaLabel": "This button is disabled at the moment"
+    },
+    "_globals": {
+        "_learnerInfo": {
+            "id": "student.name@example.org",
+            "name": "Name, Student",
+            "firstname": "Student",
+            "lastname": "Name"
+        },
+        "_accessibility": {
+            "skipNavigationText": "Skip navigation",
+            "_ariaLabels": {
+                "answeredIncorrectly": "You answered incorrectly",
+                "answeredCorrectly": "You answered correctly",
+                "selectedAnswer": "selected",
+                "unselectedAnswer": "not selected",
+                "skipNavigation": "Skip Navigation",
+                "previous": "Back",
+                "navigationDrawer": "Open course resources.",
+                "close": "Close",
+                "closeDrawer": "Close drawer",
+                "closeResources": "Close resources",
+                "drawer": "Top of side drawer",
+                "closePopup": "Close popup",
+                "next": "Next",
+                "done": "Done",
+                "complete": "Completed",
+                "incomplete": "Incomplete",
+                "incorrect": "Incorrect",
+                "correct": "Correct",
+                "locked": "Locked",
+                "visited": "Visited"
+            }
+        }
+    },
+    "_latestTrackingId": 8916,
+    "_pageLevelProgress": {
+        "_isEnabled": true,
+        "_showPageCompletion": false,
+        "_altText": "of components completed on this page."
+    },
+    "_resources": {
+        "_isEnabled": false,
+        "title": "Resources",
+        "description": "View resources for this course by clicking here.",
+        "_filterButtons": {
+            "all": "All",
+            "document": "Document",
+            "media": "Media",
+            "link": "Link"
+        },
+        "_filterAria": {
+            "allAria": "View all resources",
+            "documentAria": "View document resources",
+            "mediaAria": "View media resources",
+            "linkAria": "View resource links"
+        },
+        "_resourcesItems": [
+            {
+                "_type": "document",
+                "title": "Vanilla Theme Swatch",
+                "description": "See the swatch for the vanilla theme by clicking here.",
+                "_link": "course/en/images/vanilla-swatch.jpg"
+            },
+            {
+                "_type": "media",
+                "title": "Adapt Learning YouTube Channel",
+                "description": "Fancy catching up on some Adapt material? Click here.",
+                "_link": "https://www.youtube.com/channel/UCW8SlSFuCc--B66Gf9fAEcQ"
+            },
+            {
+                "_type": "link",
+                "title": "Adapt Project Site",
+                "description": "View the project's web site by clicking here.",
+                "_link": "https://www.adaptlearning.org/"
+            },
+            {
+                "_type": "link",
+                "title": "Framework chat",
+                "description": "Join the framework chat room by clicking here.",
+                "_link": "https://gitter.im/adaptlearning/adapt_framework"
+            }
+        ]
+    },
+    "_assessment": {
+        "_isPercentageBased": true,
+        "_scoreToPass": 75
+    },
+    "_bookmarking": {
+        "_isEnabled": true,
+        "_level": "component",
+        "title": "Resume?",
+        "body": "Would you like to resume the course from the location you were at last time?",
+        "_buttons": {
+            "yes": "Yes",
+            "no": "No"
+        }
+    },
+    "_start": {
+        "_isEnabled": true,
+        "_id": "co-10",
+        "_force": true
+    },
+    "_drawerCourseNavigation": {
+        "_isEnabled": true,
+        "title": "Navigation",
+        "_drawerOrder": 2,
+        "description": "Click here to navigate this course",
+        "_courseNavigation": [
+            {
+                "displayTitle": "<b>Home</b>",
+                "_link": "#",
+                "_isActive": true
+            },
+            {
+                "displayTitle": "<b>Collaborative approaches and reactions</b>",
+                "_link": "co-15",
+                "_isActive": true
+            },
+            {
+                "displayTitle": "<b>Mindset, inner dialogue and skills for collaboration</b>",
+                "_link": "co-20",
+                "_isActive": true
+            },
+            {
+                "displayTitle": "<b>Tools and techniques</b>",
+                "_link": "co-25",
+                "_isActive": true
+            }
+        ]
+    }
+}

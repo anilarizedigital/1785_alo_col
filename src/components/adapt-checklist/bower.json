@@ -1,0 +1,16 @@
+{
+  "name": "adapt-checklist",
+  "version": "1.0.0",
+  "framework": ">=4",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Checklist",
+  "component" : "checklist",
+  "description": "A simple checklist component",
+  "main": "/js/adapt-checklist.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

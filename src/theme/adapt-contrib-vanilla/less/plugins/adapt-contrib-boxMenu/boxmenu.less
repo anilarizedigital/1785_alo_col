@@ -1,0 +1,312 @@
+.boxmenu-menu {
+	background: @white;
+
+	.menu-container {
+		width: 100%;
+	}
+
+	.menu-container-inner {
+		padding: 0;
+	}
+
+	.menu-header {
+		//margin-bottom: 44px;
+		//background-color: @white;
+	}
+
+	.menu-header-inner {
+		//max-width: @device-width-large;
+		width: 50%;
+		float: left;
+		margin: auto;
+		padding: @menu-header-padding-top + 60px 0 @menu-header-padding-bottom;
+		text-align: left;
+
+		@media all and (max-width: (@device-width-medium)) {
+			//padding: (@menu-header-padding-top / 2) 20px @menu-header-padding-bottom;
+			width: 100%;
+		}
+		@media all and (max-width: (@device-width-medium)) {
+			padding: 40px 20px 35px;
+		}
+
+		@media all and (max-width: (@device-width-small + 20px)) {
+			width: 100%;
+			float: none;
+			padding: 20px 20px 20px 20px;
+   			width: 90%
+		}
+	}
+
+	.menu-title {
+		//margin: 0 80px 20px 100px;
+		color: @blue;
+		font-family: "Raleway Webfont";
+		font-size: 55px;
+		@media all and (max-width: (1024px)) {
+			font-size: 50px;
+		}
+		@media all and (max-width: (767px)) {
+			font-size: 45px;
+		}
+		width: 100%;
+		font-weight:bold;
+	}
+	.h1 {
+		margin: 0 auto 20px;
+		color: @orange;
+		font-family: "Raleway Webfont";
+		margin-left: 120px;
+		margin-right: 50px;
+		width: 60%;
+
+		@media all and (max-width: (@device-width-small)) {
+			width: 100%;
+			margin:0;
+			padding: 20px;
+		}
+	}
+
+	.menu-body {
+		//margin: 0;
+		//margin: 0 80px 20px 100px;
+		color: @white;
+		width: 100%;
+		font-family: "Raleway Webfont";
+		font-size: 18px;
+
+		a {
+			color: @foreground-color;
+		}
+		//max-width: 639px;
+		//margin: 0 auto;
+
+		.menu-body-inner {
+			margin-left: 120px;
+			margin-right: 50px;
+			@media all and (min-width: (@device-width-large)) {
+				width: 60%;
+			}
+			@media all and (min-width: (@device-width-medium)) {
+				width: 70%;
+			}
+			@media all and (max-width: (@device-width-small)) {
+				width: 96%;
+				margin: 0;
+				padding: 21px 20px 20px 11px;
+			}
+			p {
+				margin-bottom: 7px;
+				margin-top: 7px;
+			}
+		}
+	}
+
+	.menu-item {
+		margin: 0 1px 16px;
+
+		/*&.nth-child-even{
+			.menu-item-inner{
+				margin-left:8px;
+				.dir-rtl & {
+					margin-right:8px;
+				}
+			}
+		}
+
+		&.nth-child-odd {
+			.menu-item-inner {
+				margin-right:8px;
+				.dir-rtl & {
+					margin-left:8px;
+				}
+			}
+		}*/
+
+		&.disabled {
+			pointer-events: none;
+		}
+	}
+
+	.menu-item-inner {
+		position:relative;
+		max-width: (@device-width-large / 2) - (@item-padding * 2);
+		max-width: 320px;
+		min-height: 475px;
+		margin: auto;
+		padding: @menu-block-padding-top @menu-block-padding-right @menu-block-padding-bottom @menu-block-padding-left;
+		background-color: @menu-item-color;
+		color: @menu-item-text-color;
+
+		-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+		img {
+			vertical-align: bottom;
+		}
+		.menu-items-holder {
+			padding: 20px;
+			min-height: 170px;
+			background:@blue;
+			color:@white;
+			@media all and (max-width: @device-width-medium) {
+				min-height: 0;
+			}
+		}
+		.menu-item-bottom-container {
+			position: absolute;
+			bottom: 10px;
+			left: 20px;
+			right: 13px;
+			@media all and (max-width: @device-width-medium) {
+				position: relative;
+				bottom: inherit;
+				right: inherit;
+				left: inherit;
+			}
+		}
+	}
+
+	.menu-item-title {
+		margin: 0 0 @menu-block-title-margin-bottom;
+		margin: 0 0 20px;
+		padding: 15px 15px 0px;
+		.item-title;
+		color: @white;
+		font-family: 'Raleway Webfont';
+		font-weight:700;
+		font-size: 22px;
+		min-height: 55px;
+	}
+
+	.menu-item-body {
+		margin-bottom: 0;
+		padding: 0px 15px 20px;
+		font-family: 'Raleway Webfont';
+		font-size: 16px;
+	}
+
+	.menu-item-instruction {
+		margin-bottom: @menu-block-instruction-margin-bottom;
+		padding: 0;
+	}
+
+	.menu-item-indicator {
+		width: 31%;
+		float: none;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -6px;
+		
+		.dir-rtl & {
+			left: (@menu-block-padding-left+4);
+			right: auto;
+		}
+	}
+
+	.pagelevelprogress-indicator {
+		background-color: @menu-item-progress-color;
+		border-color: @menu-item-progress-border-color;
+		border-radius: 0;
+	}
+
+	.pagelevelprogress-indicator-inner {
+		border-color: @menu-item-progress-color;
+		border-radius: 0;
+		border: 0;
+	}
+
+	.pagelevelprogress-indicator-bar {
+		background-color: @menu-item-progress-fill-color;
+		min-width: 0px;
+	}
+
+	.menu-item-duration {
+		position: absolute;
+		right: @menu-block-padding-right;
+		float: none;
+
+		.dir-rtl & {
+			float: none;
+			left: (@menu-block-padding-left);
+			right: auto;
+		}
+	}
+
+	.menu-item-button {
+		padding: 0;
+		overflow: hidden;
+		position: absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		opacity: 0;
+		button {
+			background: @blue;
+			padding:0px;
+			width:100%;
+			height:100%;
+            //padding-right: 48px;
+			//padding-left: 48px;
+			// padding: 0px;
+            // .transition-all-colors;
+            // .no-touch &:hover {
+            //     background-color: @blueHover; //darken(@orange, 10%);
+            // }
+            // -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.2);
+            // -moz-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.2);
+			// box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.2);
+			// @media all and (max-width: @device-width-small) {
+			// 	padding-right: 23px;
+            // 	padding-left: 23px;
+			// }
+			// &:hover {
+			// 	background-color:@button-hover-color;
+			// 	color:@button-text-hover-color;
+			// }
+			// &.completed {
+			// 	background-color:@button-disabled-color;
+			// 	color:@button-text-disabled-color;
+			// }
+		}
+	}
+	.menu-item-progress-text {
+		position: absolute;
+		font-family: "Raleway Webfont";
+		font-size: 13px;
+		top: 50%;
+		left: 35%;
+		margin-top: -11px;
+	}
+}
+
+@media all and (max-width: @device-width-medium) {
+
+	.boxmenu-menu{
+		.menu-inner {
+			padding:0;
+		}
+
+		.menu-title-inner{
+			padding: 0;
+		}
+
+		.menu-body-inner{
+			padding: 0;
+		}
+
+		.menu-item{
+			/*&.nth-child-even,
+			&.nth-child-odd {
+				.menu-item-inner,
+				.dir-rtl & .menu-item-inner {
+					margin: 0 auto;
+				}
+			}*/
+		}
+	}
+}

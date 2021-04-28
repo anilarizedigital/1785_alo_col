@@ -1,0 +1,6 @@
+<div class="footer-navigation-inner component-inner">
+	{{> component this}}
+	<div class="footer-navigation-widget component-widget>
+		<div class="buttons">{{#each _items}}<button class="footer-navigation-button {{#if _classes}}{{_classes}}{{/if}}" data-action="{{_action}}" aria-label="{{ariaLabel}}" {{#unless _isEnabled}}disabled{{/unless}}>{{{text}}}</button>{{/each}}</div>
+	</div>
+</div>

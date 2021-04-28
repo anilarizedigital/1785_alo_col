@@ -1,0 +1,37 @@
+<div class="stacklist-inner component-inner" role="region" aria-label="{{_globals._components._stacklist.ariaRegion}}">
+    {{> component this}}
+
+    <div class="stacklist-widget component-widget">
+        <div class="stacklist-items">
+            <div class="stacklist-items-inner">
+                {{#each _items}}
+                    <div class="stacklist-item show">
+                        <div class="stacklist-item-inner">
+                            {{#if _graphic.src}}
+                                {{#if title}}
+                                    <div class="stacklist-title-text">{{{a11y_text title}}}</div>
+                                {{/if}}
+                            {{/if}}
+                            <div class="stacklist-item-text {{#if _graphic.src}}with-image{{/if}}" {{#if _graphic.src}}style="float: left; "{{/if}}>
+                                {{#unless _graphic.src}}
+                                    {{#if title}}
+                                        <span class="stacklist-title-text">{{{a11y_text title}}}</span>
+                                    {{/if}}
+                                {{/unless}}
+                                <span class="stacklist-body-text">{{{a11y_text body}}}</span>
+                            </div>
+                            {{#if _graphic.src}}
+                            <div class="stacklist-item-image">
+                                <img class="stacklist-item-image" src="{{_graphic.src}}" aria-label="{{_graphic.alt}}" />
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                {{/each}}
+                <div class="stacklist-button">
+                    <button class="stacklist-next stacklist-next-circle" aria-label=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

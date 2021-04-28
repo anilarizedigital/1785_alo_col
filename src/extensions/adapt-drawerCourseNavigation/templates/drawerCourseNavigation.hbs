@@ -1,0 +1,28 @@
+<div class="drawerCourseNavigation-inner" role="complementary">
+	<div class="drawerCourseNavigation-title">
+		{{title}}
+	</div>
+	<div class="drawerCourseNavigation-item-container">
+		{{#each resources}}
+		<div class="drawerCourseNavigation-item drawer-item">
+			<div class="drawerCourseNavigation-item-menu drawer-item-{{_link}}">
+				<button class="base drawerCourseNavigation-item-open drawer-item-open" {{#if _link}} data-href="{{_link}}"{{/if}} data-isActive="{{_isActive}}" tabindex="0" role="button">
+					<div class="drawer-item-title">
+						<div class="drawer-item-title-inner h5">{{{displayTitle}}}</div>
+					</div>
+				</button>
+			</div>
+			{{#each _subMenu}}
+			<div class="drawerCourseNavigation-item-submenu drawer-item-{{_link}}">
+				<button class="base drawerCourseNavigation-item-open drawer-item-open" data-href="{{_link}}" tabindex="0" role="button">
+					<div class="drawer-item-title">
+						<div class="drawer-item-title-inner h5">{{{displayTitle}}}</div>
+					</div>
+				</button>
+			</div>
+			{{/each}}
+		</div>
+		{{/each}}
+	</div>
+	<div class="aria-label a11y-ignore-focus prevent-default" tabindex="0"/>
+</div>

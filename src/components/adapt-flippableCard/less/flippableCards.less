@@ -1,0 +1,134 @@
+.flippablecard-inner {
+	
+	overflow: hidden; // due to flipping of the cards height might change 
+
+	.flippablecard-widget {
+		.card-container {
+			perspective: 2000px;
+
+			.holder {
+				float: left;
+				margin: 0 2% 0 0;
+
+				@media all and (min-width: (@device-width-small)) {
+					margin-bottom: 15px;
+				}
+				.fc-cols-4 & {
+					margin: 0 1.5% 0 0;
+					width: 23%;
+					&:last-child {
+						margin-right: 0;
+					}
+					// &.item-3 {
+					// 	margin-right: 0;
+					// }
+				}
+				.fc-cols-3 & {
+					margin: 0 1.85% 10px 0;
+					width: 32.1%;
+					
+					&.item-2, &.item-5 {
+						margin-right: 0;
+					}
+				}
+				.fc-cols-2 & {
+					width: 48.7%;
+					margin-right: 2.6%;
+					
+					&:nth-child(even) {
+						margin-right: 0;
+					}
+				}
+				.fc-cols-1 & {
+					margin-bottom: 20px;
+					margin-right: 0;
+					width: 100%;
+					
+					// &:last-child {
+					// 	margin-bottom: 0;
+					// }
+				}
+
+				.spacer {
+					height: 0;
+					position: relative;
+
+
+					.card {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+
+						.card-content {
+							background-color: @blue; // #064c63; //@orange;
+							// @media all and (min-width: (@device-width-medium + 1)) {
+							// 	max-height: 227px;
+							// }
+							box-shadow: inset 0px 0px 0px 6px #fff;
+
+							.front {
+								//border: solid 1px @foreground-color;
+								.image {
+									height: 100%;
+									background-size: cover;
+									background-position: center;
+								}
+							}
+							.back {
+								color: white;
+								overflow-y: hidden;
+								//border: solid 1px @foreground-color;
+
+								.back-inner {
+									//padding: @item-padding - 4px @item-padding @item-padding - 4px @item-padding;
+									height: ~"calc(100% - 32px)";
+									margin: 22px 20px 20px 25px;
+									overflow-y: auto;
+									padding: 0 10px 0 0;
+								}
+
+								.title-inner {
+									.item-title;
+									padding-bottom: @item-padding / 2;
+									font-size: 20px;
+									font-family: "Raleway Webfont";
+								}
+
+								&.overlap {
+									.show-more {
+										display: block;
+									}
+								}
+
+								.show-more {
+									display: none;
+									position: absolute;
+									bottom: -1px;
+									left: 0;
+									width: 100%;
+
+									.fade {
+										height: @body-text-font-size*1.5;
+										.fade-gradient(white);
+									}
+
+									button {
+										width: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.fade-gradient(@color) {
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, fade(@color, 75%) 75%, @color 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, fade(@color, 75%) 75%, @color 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, fade(@color, 75%) 75%, @color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+}

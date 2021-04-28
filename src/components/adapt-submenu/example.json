@@ -1,0 +1,36 @@
+    {
+        "_id": "c-05",
+        "_parentId": "b-05",
+        "_type": "component",
+        "_component": "submenu",
+        "_classes": "",
+        "_layout": "full",
+        "title": "Adapt Submenu",
+        "displayTitle": "Adapt Submenu",
+        "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.",
+        "instruction": "",
+        "_columns": 3,
+        "_items": [
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-1.png",
+                    "srcHover": "",
+                    "srcVisited": "",
+                    "alt": "alt text here test",
+                    "title": "Item Title 1"
+                }
+            },
+            {
+                "_graphic": {
+                    "src": "course/en/images/c-05-2.png",
+                    "srcHover": "",
+                    "srcVisited": "",
+                    "alt": "alt text here test",
+                    "title": "Item Title 2"
+                }
+            }
+        ],
+        "_pageLevelProgress": {
+            "_isEnabled": true
+        }
+    }

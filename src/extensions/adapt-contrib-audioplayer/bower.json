@@ -1,0 +1,10 @@
+{
+    "name":"adapt-contrib-audioplayer",
+    "version":"2.0.1.1",
+    "displayName":"Audio Player",
+    "main":"/js/adapt-contrib-audioplayer.js",
+    "keywords":[
+        "adapt-plugin",
+        "adapt-extension"
+    ]
+}

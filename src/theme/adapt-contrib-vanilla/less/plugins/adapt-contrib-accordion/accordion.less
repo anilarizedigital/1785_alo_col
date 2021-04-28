@@ -1,0 +1,153 @@
+.accordion-component {
+
+    .accordion-body {
+        margin-bottom: 15px;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .accordion-item-title-icon {
+        .dir-rtl & {
+	        left:inherit;
+	        right:@item-padding-left; 
+        }
+    }
+
+    .accordion-item-title {
+        color: @blue;
+        background-color: #EFF0F2;
+        border-radius: 5px;
+        padding-top: @item-padding-top;
+        padding-bottom: @item-padding-bottom;
+        padding-left: (@icon-size+(@item-padding-left*2));
+        .item-title;
+        font-size: 18px;
+        font-weight: 700;
+        
+        .dir-rtl & {
+            padding-left:inherit;
+            padding-right:(@icon-size+(@item-padding-left*2));
+        }
+
+        .accordion-item-title-icon {
+            color: @blue;
+        }
+
+        &.visited {
+            color: @item-text-color-visited;
+            background-color: @grey; //@item-color-visited;
+            border-color: @border-grey; //@item-border-color-visited;
+
+            .accordion-item-title-icon {
+                color: @item-text-color-visited;
+            }
+        }
+
+        &.selected {
+            color: @white;
+            background-color: @blue;
+            border-color: @blue;
+
+            .accordion-item-title-icon {
+                color: @item-text-color-selected;
+            }
+        }
+        .no-touch & {
+            &:hover {
+                color: @white;
+                background-color: @blue;
+                border-color: @blue;
+
+                .accordion-item-title-icon {
+                    color: @item-text-color-hover;
+                }
+            }
+            &.visited:hover {
+                color: @white;
+                background-color: @blue;
+                border-color: @blue;
+
+                .accordion-item-title-icon {
+                    color: @item-text-color-hover;
+                }
+            }
+            &.selected:hover {
+                color:  @white;
+				background-color: @blue;
+			}
+        }
+
+    }
+
+    .accordion-item-body {
+        color: @item-body-text-color;
+        background-color: #EFF0F2;
+        border: 0;
+        border-color: @item-border-color-selected;
+        border-top: 0;
+        font-weight: 500;
+        position: relative;
+        float: left;
+    }
+
+    .accordion-item-body-inner {
+        padding-top: @item-padding-top;
+        padding-bottom: @item-padding-bottom;
+        padding-left: @item-padding-left;
+        padding-right: @item-padding-right;
+
+        position: relative;
+        float: left;
+
+        .accordion-item-text {
+            float: left;
+            position: relative;
+            width: 50%;
+        }
+        .accordion-item-graphic {
+            float: right;
+            max-width: 520px;
+            padding: 0;
+            position: relative;
+            width: 50%;
+        }
+    }
+    .image-left{
+        .accordion-item-body-inner {
+            .accordion-item-text {
+                float: right;
+            }    
+            .accordion-item-graphic {
+                float: left;
+            }
+        }
+    }
+    .image-right{
+        .accordion-item-body-inner {
+            .accordion-item-text {
+                float: left;
+            }    
+            .accordion-item-graphic {
+                float: right;
+            }
+        }
+    }
+    .image-full{
+        .accordion-item-body-inner {
+            .accordion-item-text {
+                float: left;
+                width:100%;
+            }    
+            .accordion-item-graphic {
+                float: left;
+                width:100%;
+            }
+        }
+    }
+}

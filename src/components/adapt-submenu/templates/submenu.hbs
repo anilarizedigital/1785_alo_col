@@ -1,0 +1,30 @@
+<div class="component-inner submenu-inner">
+    {{> component this}}
+    <div class="component-widget submenu-widget">
+        <div role="list" class="submenu-grid">
+            <div class="submenu-grid-inner clearfix">
+                {{#each _items}}
+                <div class="base submenu-grid-item" data-index={{@index}} role="listitem" aria-label="{{#if _graphic.title}}{{_graphic.title}}{{else}}{{../_globals._accessibility._ariaLabels.item}} {{numbers @index}}{{/if}}.{{#if _graphic.alt}} {{_graphic.alt}}.{{/if}}{{#if _isVisited}} {{../_globals._accessibility._ariaLabels.visited}}.{{/if}}" data-index={{@index}}>
+                    <div class="submenu-item-image submenu-item-states-{{#if _graphic.hasImageStates}}image{{else}}css{{/if}} {{#if _isVisited}}visited{{/if}} {{#if ../_hasRoundedImages}}border-radius{{/if}}">
+                        <img src="{{_graphic.src}}"/>
+                        {{#if _graphic.hasImageStates}}
+                        <img src="{{_graphic.srcHover}}" class="submenu-item-image-hover"/>
+                        <img src="{{_graphic.srcVisited}}" class="submenu-item-image-visited"/>
+                        {{/if}}
+                    </div>
+                    <div class="submenu-item-content">
+                        {{#if _graphic.title}}
+                        <div class="submenu-item-title">
+                            <div class="submenu-item-title-inner">
+                                {{{_graphic.title}}}
+                            </div>
+                        </div>
+                        {{/if}}
+                        <button class="link-button" >View</button>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

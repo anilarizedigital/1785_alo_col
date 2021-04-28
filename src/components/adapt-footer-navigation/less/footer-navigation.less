@@ -1,0 +1,81 @@
+.footer-navigation-component {
+  .footer-navigation-inner {
+    .footer-navigation-widget {
+      text-align: center;
+      margin: 0 auto;
+
+      .button, button {
+        font-size: 14px;
+        height: 36px;
+        width:36px;
+        border-radius: 50%;
+        padding: 0px;
+        margin: 0px 0.75em;
+        
+        &.margin-on-right {
+          margin-right: 15px;
+        }
+        &.ha-menu-button{
+          background:url(course/en/images/common/btn_home_normal.png) no-repeat !important;
+				  background-position: center center !important;
+          width:76px;
+          height:76px;
+        }
+        &.ha-menu-button:hover{
+          background:url(course/en/images/common/btn_home_over.png) no-repeat !important;
+				  background-position: center center !important;
+        }
+        &.ha-back-button{
+          background:url(course/en/images/common/btn_back_normal.png) no-repeat !important;
+          background-position: center center !important;
+          top:50%;
+          transform: translateY(-50%);
+          @-moz-document url-prefix() {
+            transform: translateY(0%);
+          }
+        }
+        &.ha-back-button:hover{
+          background:url(course/en/images/common/btn_back_over.png) no-repeat !important;
+				  background-position: center center !important;
+        }
+        &.ha-back-button:disabled{
+          background:url(course/en/images/common/btn_back_disable.png) no-repeat !important;
+          background-position: center center !important;
+          top:50%;
+          transform: translateY(-50%);
+          @-moz-document url-prefix() {
+            transform: translateY(0%);
+          }
+        }
+        &.ha-next-button{
+          background:url(course/en/images/common/btn_next_normal.png) no-repeat !important;
+          background-position: center center !important;
+          top:50%;
+          transform: translateY(-50%);
+          @-moz-document url-prefix() {
+            transform: translateY(0%);
+          }
+        }
+        &.ha-next-button:hover{
+          background:url(course/en/images/common/btn_next_over.png) no-repeat !important;
+				  background-position: center center !important;
+        }
+        &.ha-next-button:disabled{
+          background:url(course/en/images/common/btn_next_disable.png) no-repeat !important;
+          background-position: center center !important;
+          top:50%;
+          transform: translateY(-50%);
+          @-moz-document url-prefix() {
+            transform: translateY(0%);
+          }
+        }
+      }
+
+      .button:hover, button:hover {
+        background-color: @blue;
+        border-color: @orange;
+      }
+
+    }
+  }
+}
